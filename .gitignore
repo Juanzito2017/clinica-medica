@@ -1,0 +1,10 @@
+# Arquivos compilados Java
+out/
+*.class
+
+# Dados salvos pela aplicacao (opcional - remova esta linha se quiser versionar os dados)
+data/
+
+# Arquivos de sistema Windows
+Thumbs.db
+desktop.ini
