@@ -65,9 +65,9 @@ public class MainFrame extends JFrame {
         abas.setFont(new Font("Arial", Font.BOLD, 13));
         abas.setBackground(new Color(245, 248, 252));
 
-        abas.addTab("👤 Pacientes", painelPaciente);
-        abas.addTab("⚕️ Médicos",   painelMedico);
-        abas.addTab("📋 Consultas", painelConsulta);
+        abas.addTab(" Pacientes", painelPaciente);
+        abas.addTab(" Médicos",   painelMedico);
+        abas.addTab(" Consultas", painelConsulta);
 
         // Atualiza os combos de consulta ao trocar de aba
         abas.addChangeListener(e -> {

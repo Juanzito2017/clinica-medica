@@ -2,10 +2,7 @@ package model;
 
 import java.io.Serializable;
 
-/**
- * Classe Paciente - herda de Pessoa.
- * Adiciona campos específicos de paciente: dataNascimento e planoSaude.
- */
+
 public class Paciente extends Pessoa implements Serializable {
 
     private static final long serialVersionUID = 2L;
@@ -20,19 +17,19 @@ public class Paciente extends Pessoa implements Serializable {
         this.planoSaude = planoSaude;
     }
 
-    // Polimorfismo: implementação específica de Paciente
+    
     @Override
     public String getTipo() {
         return "Paciente";
     }
 
-    // Polimorfismo: retorna informação específica de Paciente
+    
     @Override
     public String getInfoEspecifica() {
         return "Plano: " + planoSaude + " | Nascimento: " + dataNascimento;
     }
 
-    // Polimorfismo: relatório com dados do paciente
+    
     @Override
     public String gerarRelatorio() {
         return "=== PACIENTE ===\n"

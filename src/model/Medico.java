@@ -2,10 +2,7 @@ package model;
 
 import java.io.Serializable;
 
-/**
- * Classe Medico - herda de Pessoa.
- * Adiciona campos específicos de médico: CRM e especialidade.
- */
+
 public class Medico extends Pessoa implements Serializable {
 
     private static final long serialVersionUID = 3L;
@@ -20,19 +17,19 @@ public class Medico extends Pessoa implements Serializable {
         this.especialidade = especialidade;
     }
 
-    // Polimorfismo: implementação específica de Medico
+    
     @Override
     public String getTipo() {
         return "Médico";
     }
 
-    // Polimorfismo: retorna informação específica de Médico
+    
     @Override
     public String getInfoEspecifica() {
         return "CRM: " + crm + " | Especialidade: " + especialidade;
     }
 
-    // Polimorfismo: relatório com dados do médico
+    
     @Override
     public String gerarRelatorio() {
         return "=== MÉDICO ===\n"

@@ -2,10 +2,7 @@ package model;
 
 import java.io.Serializable;
 
-/**
- * Classe abstrata Pessoa - base da hierarquia de herança.
- * Paciente e Medico herdam desta classe.
- */
+
 public abstract class Pessoa implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -24,16 +21,13 @@ public abstract class Pessoa implements Serializable {
         this.email = email;
     }
 
-    // Método abstrato - polimorfismo: cada subclasse implementa de forma diferente
+    
     public abstract String getTipo();
 
-    // Método abstrato - polimorfismo: retorna informações específicas de cada tipo
     public abstract String getInfoEspecifica();
 
-    // Método abstrato - polimorfismo: exibe informações em formato de relatório
     public abstract String gerarRelatorio();
 
-    // Getters e Setters
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
 

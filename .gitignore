@@ -2,7 +2,7 @@
 out/
 *.class
 
-# Dados salvos pela aplicacao (opcional - remova esta linha se quiser versionar os dados)
+# Dados salvos pela aplicacao
 data/
 
 # Arquivos de sistema Windows

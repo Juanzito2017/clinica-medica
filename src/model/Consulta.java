@@ -2,15 +2,12 @@ package model;
 
 import java.io.Serializable;
 
-/**
- * Classe Consulta - representa um agendamento médico.
- * Associa um Paciente a um Medico em uma data/hora específica.
- */
+
 public class Consulta implements Serializable {
 
     private static final long serialVersionUID = 4L;
 
-    // Possíveis status de uma consulta
+    
     public enum Status {
         AGENDADA, REALIZADA, CANCELADA
     }
@@ -34,7 +31,7 @@ public class Consulta implements Serializable {
         this.observacao = observacao;
     }
 
-    // Getters e Setters
+    
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
 
